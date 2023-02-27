@@ -1,5 +1,5 @@
 body {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 @keyframes anim-progress {
@@ -28,24 +28,35 @@ body {
     left: 0;
   }
   
-  20% {
+  15% {
     top: 90%;
     left: 20%;
   }
 
-  40% {
+  30% {
     top: 65%;
     left: 40%;
   }
 
-  60% {
+  45% {
     top: 90%;
     left: 60%;
   }
 
-  80% {
+  60% {
     top: 75%;
+    left: 70%;
+    animation-timing-function: ease-in;
+  }
+
+  75% {
+    top: 90%;
     left: 80%;
+  } 
+
+  90% {
+    top: 85%;
+    left: 85%;
   }
 
   100% {
@@ -57,9 +68,9 @@ body {
 .progress-bar {
   margin: 0 auto;
   width: 1500px;
-  height: 60px;
+  height: 50px;
   border: 2px solid teal;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .progress {
@@ -75,11 +86,12 @@ body {
   width: 300px;
   height: 60px;
   background-color: yellowgreen;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   animation-name: anim-runner;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-timing-function: ease;
   animation-play-state: paused;
 }
 
@@ -90,19 +102,19 @@ body {
 .square {
   position: relative;
   margin: 0 auto;
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   border: 2px solid blue;
 }
 
 .ball {
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: blue;
   animation-name: jump;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
